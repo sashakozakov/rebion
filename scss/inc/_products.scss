@@ -2,9 +2,6 @@
 .product__block{
 	padding: 65px 0;
 	background-color: #FFF;
-	&.white{
-		background: #FFF;
-	}
 	@media (max-width: 640px){
 		padding: 40px 0;
 	}

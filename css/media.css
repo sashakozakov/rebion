@@ -1,3 +1,11 @@
+@media (min-width: 992px) and (max-width: 1145px) {
+  .order table td.big_column {
+    width: auto;
+  }
+  .order table th.big_column {
+    width: auto;
+  }
+}
 @media (min-width: 992px) and (max-width: 1024px) {
   .description .vendor .price {
     font-size: 33px;
@@ -7,7 +15,17 @@
     height: 33px;
   }
 }
-
+@media (max-width: 1050px) {
+  .subscribe__container-text {
+    font-size: 15px;
+  }
+  .subscribe__container-text span.red {
+    font-size: 20px;
+  }
+  .subscribe__container .button {
+    font-size: 17px;
+  }
+}
 @media (max-width: 991px) {
   .description .slider_section {
     margin: 0 auto 30px;
@@ -15,38 +33,174 @@
   .description .slider_section .slider-for-slide {
     min-height: 500px;
   }
+
   .cat ul li img {
     display: block;
     margin: 0 auto 15px;
   }
+
   .description .vendor:before {
     display: none;
   }
+
   .leaders .castom_leaders-next {
     right: 15px;
   }
   .leaders .castom_leaders-prev {
     left: 15px;
   }
-}
 
+  .order table th {
+    font-size: 13px;
+    padding: 13px 15px;
+    text-align: center;
+  }
+  .order table th.big_column {
+    width: auto;
+  }
+  .order table td {
+    font-size: 13px;
+  }
+  .order table td.big_column {
+    width: auto;
+    padding: 13px 15px;
+  }
+  .order .cupon {
+    width: 415px;
+  }
+
+  .subscribe__container {
+    padding: 20px;
+  }
+  .subscribe__container-text {
+    float: none;
+    background-image: none;
+    margin-bottom: 10px;
+    padding-right: 0;
+  }
+  .subscribe__container .button {
+    display: inline-block;
+  }
+
+  .delivery_table table th {
+    font-size: 14px;
+  }
+  .delivery_table table th.big_column {
+    width: auto;
+  }
+  .delivery_table table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+  .delivery_table table td.big_column {
+    width: auto;
+  }
+  .delivery_table table td p {
+    font-size: 11px;
+  }
+
+  .details form textarea {
+    font-size: 17px;
+  }
+  .details form input {
+    font-size: 17px;
+  }
+}
 @media (max-width: 768px) {
   .description__title {
     font-size: 25px;
     padding-bottom: 10px;
   }
-}
 
+  .order .cupon {
+    float: none;
+    margin-bottom: 15px;
+  }
+  .order .alert {
+    float: none;
+    margin-bottom: 20px;
+    display: block;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .details form {
+    margin: 20px 0;
+  }
+  .details form .left_side, .details form .right_side {
+    float: none;
+    width: 100%;
+  }
+  .details form input {
+    margin-right: 7px;
+    margin-left: 7px;
+  }
+  .details form input:last-of-type {
+    margin-bottom: 14px;
+  }
+  .details form textarea {
+    margin-left: 7px;
+  }
+
+  .details h1 {
+    font-size: 23px;
+  }
+
+  .summ__cart {
+    padding: 15px;
+  }
+  .summ__cart p {
+    font-size: 17px;
+  }
+  .summ__cart span {
+    font-size: 16px;
+  }
+
+  .summ .button {
+    max-width: 240px;
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 600px) {
   .review__block .tab a {
     font-size: 19px;
   }
-}
 
+  .order {
+    padding-top: 50px;
+  }
+  .order__title {
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+  .order table th {
+    padding: 5px 9px;
+  }
+  .order table td {
+    padding: 5px 9px;
+  }
+  .order table td.big_column {
+    width: 200px;
+  }
+  .order .count_block {
+    padding-right: 0;
+  }
+  .order .count_block .more {
+    top: auto;
+    left: 10px;
+  }
+  .order .count_block .less {
+    bottom: auto;
+  }
+}
 @media (max-width: 550px) {
   .description .slider_section .slider-for-slide {
     min-height: 300px;
   }
+
   .cat ul li {
     display: inline-block;
     width: 50%;
@@ -64,6 +218,7 @@
   .cat ul li:nth-child(3n) img, .cat ul li:nth-child(4n) img {
     margin-top: 10px;
   }
+
   .description .vendor .price {
     font-size: 25px;
   }
@@ -80,14 +235,17 @@
   .description .vendor .count_block .less {
     bottom: -3px;
   }
+
   .button, .basket {
     font-size: 17px;
   }
+
   .review_form input {
     width: 100%;
     float: none;
     margin-top: 15px;
   }
+
   .review__block .stars {
     padding-bottom: 15px;
   }
@@ -104,11 +262,11 @@
     font-size: 14px;
   }
 }
-
 @media (max-width: 500px) {
   .slider-leaders .leaders-slide.slick-active:after {
     display: none;
   }
+
   .description .delivery {
     padding-left: 0;
   }
@@ -170,18 +328,75 @@
     height: 18px;
     background-size: cover;
   }
+
   .cat ul li span {
     font-size: 13px;
   }
+
   .formulare h1 {
     font-size: 23px;
   }
+
   .leaders h1 {
     font-size: 23px;
     margin-bottom: 20px;
   }
-}
 
+  .order table th {
+    padding: 5px;
+    font-size: 10px;
+  }
+  .order table td {
+    font-size: 10px;
+    width: 20%;
+  }
+  .order table td.big_column {
+    padding: 8px 5px;
+  }
+  .order .count_block .counts {
+    font-size: 13px;
+  }
+  .order .count_block .more {
+    bottom: -15px;
+    left: 0;
+  }
+  .order .count_block .less {
+    bottom: -15px;
+  }
+  .order .count_block span {
+    font-size: 12px;
+  }
+  .order .alert {
+    font-size: 13px;
+  }
+}
+@media (max-width: 480px) {
+  .subscribe__container-text {
+    font-size: 11px;
+  }
+  .subscribe__container .button {
+    font-size: 11px;
+  }
+
+  .delivery_table .second_table td {
+    text-align: left;
+  }
+  .delivery_table .second_table td span {
+    float: none;
+  }
+  .delivery_table .second_table td p {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+  }
+  .delivery_table .second_table td p img {
+    max-width: 40px;
+    margin-left: 6px;
+  }
+  .delivery_table .second_table td .cash {
+    float: none;
+  }
+}
 @media (max-width: 440px) {
   .review__block .stars {
     padding-bottom: 10px;
@@ -199,3 +414,25 @@
     font-size: 10px;
   }
 }
+@media (max-width: 400px) {
+  .delivery_table table {
+    width: -webkit-calc(100% + 30px);
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .delivery_table table th {
+    padding: 10px;
+  }
+
+  .details form input {
+    font-size: 13px;
+    height: 30px;
+  }
+  .details form textarea {
+    height: 120px;
+    font-size: 13px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

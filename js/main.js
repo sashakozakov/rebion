@@ -115,6 +115,8 @@
 		});
 
 
+
+
 		var qtyField = $('.counts'),
 		qtyUp = $('.more'),
 		qtyDown = $('.less');
@@ -215,8 +217,23 @@
 			$( '.four_stars' ).addClass( "clicked" );
 		});
 
+		/*Check table delivery*/
 
+		$('.delivery_table .first_table a').click(function() {
+			event.preventDefault();
+			$('.delivery_table .first_table').find('.checked').removeClass('checked');
+			$(this).parent().addClass('checked');
+			$('.delivery_table .first_table a').html('<img src="images/empty_check.png">');
+			$('.delivery_table .first_table .checked a').html('<img src="images/checked.png">');
+		});
 
+		$('.delivery_table .second_table a').click(function(){
+			event.preventDefault();
+			$('.delivery_table .second_table').find('.checked').removeClass('checked');
+			$(this).parent().addClass('checked');
+			$('.delivery_table .second_table a').html('<img src="images/empty_check.png">');
+			$('.delivery_table .second_table .checked a').html('<img src="images/checked.png">');
+		});
 	});
 
 $(window).scroll(function() {

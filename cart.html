@@ -135,12 +135,12 @@
 								4300 руб.
 							</td>
 							<td>
-							<div class="count_block">
-								<input class="counts" type="number" name="count" min="1" value="1" step="1" >
-								<span>шт</span>
-								<button class="more"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
-								<button class="less"><i class="fa fa-angle-down" aria-hidden="true"></i></button>
-							</div>
+								<div class="count_block">
+									<input class="counts" type="number" name="count" min="1" value="1" step="1" >
+									<span>шт</span>
+									<button class="more"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+									<button class="less"><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+								</div>
 							</td>
 							<td>
 								4300 руб.
@@ -158,14 +158,200 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="subscribe">
 			<div class="row">
-			<div class="col-md-12">
-				<div class="subscribe__container clearfix">
-					<p class="subscribe__container-text"><span>Подпишись</span> на рассылку новостей от <span>REBION</span> и получи скидку в <span class="red">5%</span> на все товары</p>
-					<a href="#" class="button">подписаться</a>
+				<div class="col-md-12">
+					<div class="subscribe__container clearfix">
+						<p class="subscribe__container-text"><span>Подпишись</span> на рассылку новостей от <span>REBION</span> и получи скидку в <span class="red">5%</span> на все товары</p>
+						<a href="#" class="button">подписаться</a>
+					</div>
 				</div>
 			</div>
+		</section>
+
+		<section class="delivery_table">
+			<div class="row">
+				<div class="col-md-12 ">
+					<table class="first_table ">
+						<tr>
+							<th class="first_col">
+
+							</th>
+							<th class="big_column clearfix">
+								<span>Доставка</span>
+								<div class="select-wrapper">
+									<select class="town">
+										<option>Город</option>
+										<option>Москва</option>
+										<option>Ростов</option>
+										<option>Питер</option>
+									</select>
+								</div>
+							</th>
+							<th>
+								Цена
+							</th>
+						</tr>
+						<tr>
+							<td><a href="#"><img src="images/empty_check.png"></a></td>
+							<td class="big_column">Курьерская служба (Москва в пределах МКАД)</td>
+							<td>380 руб.</td>
+						</tr>
+						<tr>
+							<td><a href="#"><img src="images/empty_check.png"></a></td>
+							<td class="big_column">Срочная доставка (по Москве)</td>
+							<td>600 руб.</td>
+						</tr>
+						<tr>
+							<td><a href="#"><img src="images/empty_check.png"></a></td>
+							<td class="big_column">Самовывоз из офиса (Бесплатно)</td>
+							<td>0 руб.</td>
+						</tr>
+						<tr>
+							<td><a href="#"><img src="images/empty_check.png"></a></td>
+							<td class="big_column">Самовывоз из ПВЗ Boxberry в Москве</td>
+							<td>170 руб.</td>
+						</tr>
+						<tr>
+							<td><a href="#"><img src="images/empty_check.png"></a></td>
+							<td class="big_column">Самовывоз из ПВЗ Boxberry в МО, СПБ, ЛенОбл, города ЦФО, СЗФО, ЮФО, СКФО, ПривФО</td>
+							<td>200 руб.</td>
+						</tr>
+						<tr>
+							<td><a href="#"><img src="images/empty_check.png"></a></td>
+							<td class="big_column">Самовывоз из ПВЗ Boxberry в города УрФО, СибФО и Дальневосточного ФО</td>
+							<td>300 руб.</td>
+						</tr>
+						<tr>
+							<td><a href="#"><img src="images/empty_check.png"></a></td>
+							<td class="big_column">Курьерская служба (регионы РФ)</td>
+							<td>500 руб.</td>
+						</tr>
+					</table>
+
+					<table class="second_table">
+						<tr>
+							<th class="first_col">
+
+							</th>
+							<th>
+								Оплата
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<a href="#"><img src="images/empty_check.png"></a>
+							</td>
+							<td class="clearfix">
+								<span>Оплата наличными</span>
+								<p class="cash">Оплата наличными при доставке заказа</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#"><img src="images/empty_check.png"></a>
+							</td>
+							<td>
+								<span>Банковская карта</span>
+								<p><img src="images/mastercard.png"></p>
+								<p><img src="images/visa.png"></p>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="details">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="text-center">ДЕТАЛИ ОПЛАТЫ</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<form method="POST" class="clearfix">
+						<span class="left_side matchHeight">
+							<input type="text" name="name" placeholder="Имя">
+							<input type="text" name="surname" placeholder="Фамилия">
+							<input type="email" name="email" placeholder="E-mail">
+							<input type="text" name="tel" placeholder="Телефон">
+							<label>Адрес</label>
+							<input type="text" name="address" placeholder="Улица и т.д." class="big_input">
+							<input type="text" name="tel" placeholder="Подъезд, этаж и т.п. (не обязательно)" class="big_input">
+						</span>
+						<span class="right_side matchHeight">
+							<textarea rows="10" name="message" placeholder="Примечание к заказу"></textarea>
+						</span>
+					</form>
+					<p class="text-center required">Поля помеченные (*) являются обязательными к заполнению.</p>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="summ">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="summ__cart clearfix">
+						<p>СУММА В КОРЗИНЕ</p>
+						<span>4680 руб</span>
+					</div>
+					<p class="include">* Cумма включает доставку</p>
+
+					<a href="#" class="button">подтвердить заказ</a>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="leaders" style="background-image: url(images/leaders_bg.jpg)">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="text-center">Лидеры продаж</h1>
+					<div class="slider-leaders">
+						<div class="leaders-slide">
+							<img src="images/Antistress-max.png">
+							<p class="name">Здоровый сон</p>
+							<p class="price">4500 руб</p>
+							<a href="#" class="buy button">Купить</a>
+						</div>
+						<div class="leaders-slide">
+							<img src="images/Activ-max-145x640.png">
+							<p class="name">Здоровый сон</p>
+							<p class="price">4500 руб</p>
+							<a href="#" class="buy button">Купить</a>
+						</div>
+						<div class="leaders-slide">
+							<img src="images/Bodrosti-max-145x640.png">
+							<p class="name">Здоровый сон</p>
+							<p class="price">4500 руб</p>
+							<a href="#" class="buy button">Купить</a>
+						</div>
+						<div class="leaders-slide">
+							<img src="images/Immunitet-max-145x640.png">
+							<p class="name">Здоровый сон</p>
+							<p class="price">4500 руб</p>
+							<a href="#" class="buy button">Купить</a>
+						</div>
+						<div class="leaders-slide">
+							<img src="images/Zabota-max-145x640_1.png">
+							<p class="name">Здоровый сон</p>
+							<p class="price">4500 руб</p>
+							<a href="#" class="buy button">Купить</a>
+						</div>
+						<div class="leaders-slide">
+							<img src="images/Zdorovii-son-max-145x640.png">
+							<p class="name">Здоровый сон</p>
+							<p class="price">4500 руб</p>
+							<a href="#" class="buy button">Купить</a>
+						</div>
+					</div>
+					<div class="castom_leaders-prev"><img src="images/leader_arrow_left.png"></div>
+					<div class="castom_leaders-next"><img src="images/leader_arrow_right.png"></div>
+				</div>
 			</div>
 		</section>
 	</main>

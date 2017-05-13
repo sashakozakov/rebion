@@ -294,9 +294,6 @@
   padding: 65px 0;
   background-color: #FFF;
 }
-.product__block.white {
-  background: #FFF;
-}
 @media (max-width: 640px) {
   .product__block {
     padding: 40px 0;
@@ -1836,9 +1833,6 @@ input[type=number]::-webkit-outer-spin-button {
   right: -5px;
   top: 0;
 }
-.leaders .slider-leaders .leaders-slide.slick-active:nth-child(4n):after {
-  /* display: none; */
-}
 .leaders .slider-leaders .leaders-slide img {
   display: block;
   margin: 0 auto;
@@ -2003,8 +1997,8 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #860211;
 }
 
-.cart {
-  margin-bottom: 60px;
+.cart .leaders {
+  padding-bottom: 110px;
 }
 
 .order {
@@ -2022,6 +2016,9 @@ input[type=number]::-webkit-outer-spin-button {
   position: relative;
   padding-bottom: 25px;
   text-transform: uppercase;
+}
+.order table {
+  width: 100%;
 }
 .order table th {
   font-size: 20px;
@@ -2078,7 +2075,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: inline-block;
   vertical-align: bottom;
   line-height: 1;
-  line-height-color: #585858;
+  color: #585858;
 }
 .order .count_block .more, .order .count_block .less {
   background: none;
@@ -2143,6 +2140,7 @@ input[type=number]::-webkit-outer-spin-button {
 .subscribe__container-text {
   font-size: 17px;
   margin-bottom: 0;
+  margin-top: 10px;
   padding-right: 40px;
   background-image: url(../images/subscribe_arrow.png);
   background-position: right;
@@ -2163,10 +2161,223 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 10px 25px;
   float: right;
   text-transform: uppercase;
+  background-color: #d10017;
+  box-shadow: inset 0 -3px 0 #860211;
 }
 .subscribe__container .button:hover {
   color: #FFF;
-  background-color: #004c79;
+  background-color: #860211;
+}
+
+.delivery_table {
+  margin-top: 45px;
+  margin-bottom: 65px;
+}
+.delivery_table table {
+  width: 100%;
+  text-align: center;
+}
+.delivery_table table th {
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "ComfortaaBold", sans-serif;
+  color: #004c79;
+  border-right: 1px solid #8e8e8e;
+  border-bottom: 1px solid #8e8e8e;
+}
+.delivery_table table th:last-of-type {
+  border-right: none;
+}
+.delivery_table table th.first_col {
+  width: 55px;
+}
+.delivery_table table th.big_column {
+  width: 930px;
+  text-align: left;
+}
+.delivery_table table th.big_column span {
+  float: left;
+}
+.delivery_table table th.big_column .select-wrapper {
+  float: right;
+  position: relative;
+}
+.delivery_table table th.big_column .select-wrapper:after {
+  content: "";
+  background-image: url(../images/angel_down.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 15px;
+  height: 7px;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+}
+.delivery_table table th.big_column .select-wrapper .town {
+  color: #d10017;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+.delivery_table table td {
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 17px;
+  font-family: "ComfortaaBold", sans-serif;
+  color: #585858;
+  border-right: 1px solid #8e8e8e;
+  border-bottom: 1px solid #8e8e8e;
+}
+.delivery_table table td:last-of-type {
+  border-right: none;
+}
+.delivery_table table td.big_column {
+  text-align: left;
+}
+.delivery_table table td.checked {
+  color: #00619a;
+  background-color: #d7f0ff;
+}
+.delivery_table table td.checked ~ td {
+  color: #00619a;
+  background-color: #d7f0ff;
+}
+.delivery_table .second_table {
+  margin-top: 30px;
+}
+.delivery_table .second_table th {
+  text-align: left;
+}
+.delivery_table .second_table td span {
+  float: left;
+}
+.delivery_table .second_table td p {
+  float: right;
+  margin: 0;
+}
+.delivery_table .second_table td p img {
+  margin-left: 25px;
+}
+.delivery_table .second_table td:not(:first-of-type) {
+  padding: 20px 30px 20px 15px;
+}
+.delivery_table .second_table td.checked {
+  background-color: transparent;
+}
+.delivery_table .second_table td.checked ~ td {
+  color: #00619a;
+  background-color: transparent;
+}
+
+.details {
+  background-color: #F8F8F8;
+  padding: 45px 0 40px;
+}
+.details h1 {
+  font-family: "ComfortaaBold", sans-serif;
+  color: #00619a;
+  text-transform: uppercase;
+  font-size: 39px;
+}
+.details form {
+  margin: 35px 0;
+}
+.details form label {
+  display: block;
+  font-size: 15px;
+  color: #004C79;
+  padding-left: 15px;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 15px;
+  float: left;
+}
+.details form .left_side, .details form .right_side {
+  float: left;
+  width: 50%;
+}
+.details form input {
+  width: -webkit-calc(50% - 14px);
+  width: calc(50% - 14px);
+  margin-right: 14px;
+  margin-bottom: 14px;
+  float: left;
+}
+.details form input.big_input {
+  width: -webkit-calc(100% - 14px);
+  width: calc(100% - 14px);
+}
+.details form input:last-of-type {
+  margin-bottom: 0;
+}
+.details form textarea {
+  width: -webkit-calc(100% - 14px);
+  width: calc(100% - 14px);
+  margin-left: 14px;
+  height: 263px;
+  padding: 10px 15px;
+}
+.details .required {
+  font-size: 15px;
+  color: #87d3ff;
+  margin: 0;
+}
+
+.summ {
+  margin-top: 55px;
+}
+.summ__cart {
+  background-color: #f8f8f8;
+  border-top: 1px solid #8e8e8e;
+  border-bottom: 1px solid #8e8e8e;
+  padding: 15px 30px;
+  margin-bottom: 15px;
+}
+.summ__cart p {
+  font-size: 24px;
+  font-family: "ComfortaaBold", sans-serif;
+  color: #00619a;
+  float: left;
+  margin-bottom: 0;
+}
+.summ__cart span {
+  float: right;
+  color: #00619a;
+  font-family: "ComfortaaBold", sans-serif;
+  font-size: 24px;
+}
+.summ .include {
+  font-size: 15px;
+  color: #87d3ff;
+  margin: 0;
+  padding-left: 8px;
+}
+.summ .button {
+  max-width: 415px;
+  display: block;
+  margin: 0 auto 75px;
+  background-color: #d10017;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: "ComfortaaBold", sans-serif;
+  box-shadow: inset 0 -3px 0 #860211;
+  padding: 25px;
+  line-height: 1;
+}
+.summ .button:hover {
+  background-color: #860211;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
