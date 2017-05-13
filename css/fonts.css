@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "FontAwesome";
+    src: url("../fonts/fontawesome-webfont.eot");
+    src: url("../fonts/fontawesome-webfont.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/fontawesome-webfont.woff") format("woff"),
+    url("../fonts/fontawesome-webfont.svg") format("svg"),
+    url("../fonts/fontawesome-webfont.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+@font-face {font-family: "ComfortaaBold";
+    src: url("../fonts/ComfortaaBold.eot");
+    src: url("../fonts/ComfortaaBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ComfortaaBold.woff2") format("woff2"),
+    url("../fonts/ComfortaaBold.woff") format("woff"),
+    url("../fonts/ComfortaaBold.ttf") format("truetype"),
+    url("../fonts/ComfortaaBold.svg#Comfortaa") format("svg");
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Cart</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/media.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+	<a href="#top" class="go_top">
+		<i class="fa fa-chevron-up" aria-hidden="true"></i>
+	</a>
+
+	<header class="header">
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="logo">
+					<a href="#">
+						<img src="images/logo.png" alt="site name">
+					</a>
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<div class="header__cart">
+					<a href="#">
+						<span>в корзину</span>
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+						<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-12 clearfix menu_row">
+				<div class="hamburger_icon">
+					<span class="icon">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</div>
+				<div class="header__menu">
+					<ul>
+						<li>
+							<a href="#">
+								товары
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								О КОМПАНИИ
+							</a>
+						</li>
+						<li class="current-menu-item">
+							<a href="#">
+								ДОСТАВКА
+							</a>
+						</li>
+						<li class="menu-item-has-children">
+							<a href="#">
+								контакты
+							</a>
+							<ul class="sub-menu submenu is-dropdown-submenu">
+								<li>
+									<a href="#">
+										item 1
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										item 2
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										item 3
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="cart">
+		<section class="order">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="order__title text-center">Ваш заказ</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<table>
+						<tr>
+							<th class="big_column">
+								Продукт
+							</th>
+							<th>
+								Цена
+							</th>
+							<th>
+								Кол/во
+							</th>
+							<th>
+								Итого
+							</th>
+							<th>
+
+							</th>
+						</tr>
+						<tr>
+							<td class="big_column">
+								Облоко спокойствия «Антистрес» 150 мл
+							</td>
+							<td>
+								4300 руб.
+							</td>
+							<td>
+							<div class="count_block">
+								<input class="counts" type="number" name="count" min="1" value="1" step="1" >
+								<span>шт</span>
+								<button class="more"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+								<button class="less"><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+							</div>
+							</td>
+							<td>
+								4300 руб.
+							</td>
+							<td>
+								<a href="#"><img src="images/del.png"></a>
+							</td>
+						</tr>
+					</table>
+					<form method="POST" class="cupon">
+						<input type="text" name="cupon" placeholder="Код купона">
+						<button type="submit">применить купон</button>
+					</form>
+					<span class="alert">** Внимание! Товар возврату не подлежит</span>
+				</div>
+			</div>
+		</section>
+		<section class="subscribe">
+			<div class="row">
+			<div class="col-md-12">
+				<div class="subscribe__container clearfix">
+					<p class="subscribe__container-text"><span>Подпишись</span> на рассылку новостей от <span>REBION</span> и получи скидку в <span class="red">5%</span> на все товары</p>
+					<a href="#" class="button">подписаться</a>
+				</div>
+			</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="subscribe_form">
+			<form action="#" method="post">
+				<input type="email" placeholder="Адрес Email">
+				<input type="submit" value="Получить скидку">
+			</form>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer--logo">
+					<a href="#">
+						health
+						cloud
+					</a>
+				</div>
+				<ul class="footer__socials">
+					<li>
+						<a href="#">
+							<i class="fa fa-vk" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+				<div class="footer__address">
+					<p>
+						г.Москва, Нижний Кисельный переулок, д.5/23 стр.1, офис 515.
+					</p>
+					<p>
+						<a href="tel:89262583738">8 (926) 258-37-38</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.matchHeight-min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
