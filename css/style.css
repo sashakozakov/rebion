@@ -2162,7 +2162,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .subscribe__container .button {
   width: auto;
-  padding: 10px 25px;
+  font-size: 16px;
+  padding: 8px 25px;
   float: right;
   text-transform: uppercase;
   background-color: #d10017;
@@ -2417,9 +2418,6 @@ input[type=number]::-webkit-outer-spin-button {
   .subscribe__container-text span.red {
     font-size: 20px;
   }
-  .subscribe__container .button {
-    font-size: 17px;
-  }
 }
 @media (max-width: 991px) {
   .description .slider_section {
@@ -2466,6 +2464,7 @@ input[type=number]::-webkit-outer-spin-button {
 
   .subscribe__container {
     padding: 20px;
+    text-align: center;
   }
   .subscribe__container-text {
     float: none;
@@ -2475,6 +2474,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .subscribe__container .button {
     display: inline-block;
+    float: none;
   }
 
   .delivery_table table th {
@@ -2492,6 +2492,10 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .delivery_table table td p {
     font-size: 11px;
+  }
+
+  .order .alert {
+    font-size: 14px;
   }
 }
 @media (max-width: 768px) {
@@ -2775,9 +2779,14 @@ input[type=number]::-webkit-outer-spin-button {
     float: none;
   }
 
+  .order .cupon input {
+    width: 100%;
+  }
+
   .order .cupon button {
     position: static;
-    margin-top: 15px;
+    margin: 15px auto 0;
+    display: block;
   }
 
   .details form input {

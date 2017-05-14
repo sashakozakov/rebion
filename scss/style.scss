@@ -1605,7 +1605,8 @@ input[type=number]::-webkit-outer-spin-button {
 		}
 		.button{
 			width: auto;
-			padding: 10px 25px;
+			font-size: 16px;
+			padding: 8px 25px;
 			float: right;
 			text-transform: uppercase;
 			background-color: $red;
@@ -1866,9 +1867,6 @@ input[type=number]::-webkit-outer-spin-button {
 				font-size: 20px;
 			}
 		}
-		.button{
-			font-size: 17px;
-		}
 	}
 
 }
@@ -1918,6 +1916,7 @@ input[type=number]::-webkit-outer-spin-button {
 	}
 	.subscribe__container{
 		padding: 20px;
+		text-align: center;
 		&-text{
 			float: none;
 			background-image: none;
@@ -1926,6 +1925,7 @@ input[type=number]::-webkit-outer-spin-button {
 		}
 		.button{
 			display: inline-block;
+			float: none;
 		}
 	}
 	.delivery_table table{
@@ -1946,6 +1946,9 @@ input[type=number]::-webkit-outer-spin-button {
 			}
 		}
 
+	}
+	.order .alert{
+		font-size: 14px;
 	}
 
 }
@@ -2010,9 +2013,7 @@ input[type=number]::-webkit-outer-spin-button {
 	}
 
 }
-@media (max-width: 700px){
 
-}
 
 @media (max-width: 600px){
 	.review__block{
@@ -2262,9 +2263,13 @@ input[type=number]::-webkit-outer-spin-button {
 		}
 
 	}
+	.order .cupon input{
+		width: 100%;
+	}
 	.order .cupon button{
 		position: static;
-		margin-top: 15px;
+		margin: 15px auto 0;
+		display: block;
 	}
 	.details form input{
 		width: calc(100% - 14px);
