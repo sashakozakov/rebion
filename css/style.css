@@ -571,8 +571,33 @@ Theme URI:
 }
 
 .features__container {
-  padding: 10px 0 103px;
+  padding: 67px 0 103px;
   background: #F1F1F1;
+}
+@media (max-width: 640px) {
+  .features__container {
+    padding: 40px 0 75px;
+  }
+}
+.features__container--subtitle {
+  color: #00619a;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "ComfortaaBold", sans-serif;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.features__container--subtitle:before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 140px;
+  margin: 0 auto;
+  height: 1px;
+  background: #00619a;
 }
 .features__container ul {
   list-style: none;
@@ -587,6 +612,21 @@ Theme URI:
   width: 33%;
   vertical-align: top;
   margin-bottom: 10px;
+}
+@media (max-width: 900px) {
+  .features__container ul li {
+    padding: 8px;
+  }
+}
+@media (max-width: 800px) {
+  .features__container ul li {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .features__container ul li {
+    width: 100%;
+  }
 }
 .features__container ul li div {
   display: block;
@@ -608,6 +648,16 @@ Theme URI:
   display: block;
   max-width: 281px;
   margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .features__container ul li div span {
+    padding: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .features__container ul li div span {
+    padding: 15px 15px 5px;
+  }
 }
 .features__container .main_button {
   margin-top: 25px;
@@ -839,7 +889,7 @@ button:hover, button:focus, .button:hover, .button:focus, input[type='submit']:h
   font-size: 35px;
   color: #00619a;
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "ComfortaaBold", sans-serif;
 }
 
 .page_title {
@@ -1317,6 +1367,19 @@ hr {
 .aerovitamins__navigation {
   padding: 20px 0 0;
 }
+.aerovitamins__navigation .progress_line {
+  width: 100%;
+  height: 1px;
+  background: #04A4CF;
+  margin: 0 auto 30px;
+  max-width: 1040px;
+  float: none;
+}
+@media (max-width: 991px) {
+  .aerovitamins__navigation .progress_line {
+    display: none;
+  }
+}
 @media (max-width: 991px) {
   .aerovitamins__section {
     margin-bottom: 20px;
@@ -1359,12 +1422,55 @@ hr {
   -webkit-transition: all .4s;
           transition: all .4s;
 }
+@media (max-width: 480px) {
+  .aerovitamins__navigation .nav_block {
+    width: 136px;
+    height: 136px;
+  }
+}
+.aerovitamins__navigation .nav_block.selected {
+  background: #00619a;
+}
+.aerovitamins__navigation .nav_block.selected:before {
+  position: absolute;
+  content: "";
+  top: -52px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: 0;
+  border-style: solid;
+  border-width: 0 29px 18px 29px;
+  border-color: transparent transparent #04a4cf transparent;
+  margin: 0 auto;
+  width: 0;
+}
+@media (max-width: 991px) {
+  .aerovitamins__navigation .nav_block.selected:before {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .aerovitamins__navigation .nav_block--title {
+    line-height: 1;
+  }
+}
 .aerovitamins__navigation .nav_block--title a {
   text-transform: uppercase;
   font-family: "ComfortaaBold", sans-serif;
   font-size: 20px;
   font-weight: bold;
   color: #00619a;
+}
+@media (max-width: 640px) {
+  .aerovitamins__navigation .nav_block--title a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .aerovitamins__navigation .nav_block--title a {
+    font-size: 16px;
+  }
 }
 .aerovitamins__navigation .nav_block img {
   position: absolute;
