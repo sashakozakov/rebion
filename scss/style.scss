@@ -23,6 +23,7 @@ $red: #d10017;
 }
 
 @import "inc/products";
+@import "inc/page";
 
 body{
 	overflow-x: hidden;
@@ -198,6 +199,33 @@ button, .button, input[type='submit'], input[type='reset'] {
 
 
 
+.main_button{
+	background: $red;
+	color: #fff;
+	display: inline-block;
+	padding: 16px;
+	border-radius: 5px;
+	font-size: 25px;
+	font-weight: bold;
+	box-shadow: inset 0 -3px 0 #84000f;
+	position: relative;
+	outline: none;
+	max-width: 300px;
+	width: 100%;
+	font-family: $title_font;
+	text-transform: uppercase;
+	@media (max-width: 640px){
+		font-size: 21px;
+		max-width: 240px;
+		padding: 8px 10px;
+	}
+	&:hover,
+	&:active,
+	&:focus{
+		background: #84000F;
+		color: #FFF;
+	}
+}
 
 
 
@@ -206,6 +234,31 @@ button, .button, input[type='submit'], input[type='reset'] {
 	color: $blue;
 	margin: 0;
 	font-family: $pt_sans;
+}
+
+.page_title{
+	font-size: 35px;
+	font-family: $title_font;
+	margin: 0;
+	color: $blue;
+	letter-spacing: 2px;
+	line-height: 2;
+	&.red{
+		color: $red;
+	}
+	&.underline{
+		position: relative;
+		&:before{
+			position: absolute;
+			content: "";
+			margin: 0 auto;
+			top: calc(100% + 9px);
+			left: 0;right: 0;
+			width: 115px;
+			height: 1px;
+			background: $blue;
+		}
+	}
 }
 
 hr{
@@ -1497,6 +1550,7 @@ input[type=number]::-webkit-outer-spin-button {
 			}
 		}
 	}
+
 	.count_block{
 		display: inline-block;
 		position: relative;
@@ -1536,9 +1590,23 @@ input[type=number]::-webkit-outer-spin-button {
 		}
 		.more{
 			top:-7px;
+			@media (min-width: 495px) and (max-width: 500px){
+					top: -10px;
+				}
+			@media (min-width: 501px) and (max-width: 520px){
+				top: 0px;
+			}
+
 		}
 		.less{
 			bottom: -9px;
+			@media (min-width: 495px) and (max-width: 500px){
+					bottom: -10px;
+			}
+			@media (min-width: 501px) and (max-width: 520px){
+				bottom: -4px;
+			}
+
 		}
 	}
 	.cupon{
@@ -1619,12 +1687,20 @@ input[type=number]::-webkit-outer-spin-button {
 	}
 }
 
+
+
+
 .delivery_table{
 	margin-top: 45px;
 	margin-bottom: 65px;
 	table{
 		width: 100%;
 		text-align: center;
+		@media (max-width: 400px){
+			width: calc(100% + 30px);
+			margin-left: -15px;
+			margin-right: -15px;
+		}
 		th{
 			padding: 10px 15px;
 			text-align: center;
@@ -1633,6 +1709,13 @@ input[type=number]::-webkit-outer-spin-button {
 			color: #004c79;
 			border-right: 1px solid #8e8e8e;
 			border-bottom: 1px solid #8e8e8e;
+			@media (min-width: 992px){
+					height: 65px;
+			}
+			@media (max-width: 400px){
+				padding: 10px;
+			}
+
 			&:last-of-type{
 				border-right: none;
 			}
@@ -1682,6 +1765,9 @@ input[type=number]::-webkit-outer-spin-button {
 			color: #585858;
 			border-right: 1px solid #8e8e8e;
 			border-bottom: 1px solid #8e8e8e;
+			@media (min-width: 992px){
+				height: 65px;
+			}
 			&:last-of-type{
 				border-right: none;
 			}
@@ -1764,6 +1850,10 @@ input[type=number]::-webkit-outer-spin-button {
 			float: left;
 			height: 30px;
 			font-size: 14px;
+			@media (max-width: 400px){
+				font-size: 13px;
+				height: 30px;
+			}
 			&.big_input{
 				width: calc(100% - 14px);
 			}
@@ -1777,6 +1867,10 @@ input[type=number]::-webkit-outer-spin-button {
 			height: 203px;
 			padding: 10px 15px;
 			font-size: 14px;
+			@media (max-width: 400px){
+				height: 120px;
+				font-size: 13px;
+			}
 		}
 	}
 	.required{
@@ -2294,52 +2388,5 @@ input[type=number]::-webkit-outer-spin-button {
 		.tab a{
 			font-size: 10px;
 		}
-	}
-}
-@media (max-width: 400px){
-	.delivery_table{
-		table{
-			width: calc(100% + 30px);
-			margin-left: -15px;
-			margin-right: -15px;
-			th{
-				padding: 10px;
-			}
-		}
-	}
-	.details form {
-		input{
-			font-size: 13px;
-			height: 30px;
-		}
-		textarea{
-			height: 120px;
-			font-size: 13px;
-		}
-	}
-}
-
-@media (min-width: 992px){
-
-.delivery_table table td{
-	height: 65px;
-}
-}
-
-@media (min-width: 495px) and (max-width: 500px){
-	.order .count_block .more{
-		top: -10px;
-	}
-	.order .count_block .less{
-		bottom: -10px;
-	}
-}
-
-@media (min-width: 501px) and (max-width: 520px){
-	.order .count_block .more{
-		top: 0px;
-	}
-	.order .count_block .less{
-		bottom: -4px;
 	}
 }
